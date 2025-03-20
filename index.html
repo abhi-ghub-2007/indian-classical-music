@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Classical Music Instruments</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+    if (!sessionStorage.getItem("loggedIn")) {
+        window.location.href = "login.html";  // Redirect if not logged in
+    }
+</script>
+</head>
+<body>
+
+    <header>
+        <h1>Indian Classical Music Instruments</h1>
+        <nav>
+            <ul>
+                <li><a href="#string">String Instruments</a></li>
+                <li><a href="#percussion">Percussion Instruments</a></li>
+                <li><a href="#wind">Wind Instruments</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="string" class="category">
+        <h2>String Instruments</h2>
+        <div class="instrument">
+            <img src="images/sitar.jpg" alt="Sitar">
+            <p><strong>Sitar:</strong> A plucked string instrument used in Hindustani classical music.</p>
+        </div>
+        <div class="instrument">
+            <img src="images/veena.jpg" alt="Veena">
+            <p><strong>Veena:</strong> A traditional South Indian instrument with a resonating body.</p>
+        </div>
+    </section>
+
+    <section id="percussion" class="category">
+        <h2>Percussion Instruments</h2>
+        <div class="instrument">
+            <img src="images/tabla.jpg" alt="Tabla">
+            <p><strong>Tabla:</strong> A pair of hand drums used in North Indian music.</p>
+        </div>
+        <div class="instrument">
+            <img src="images/mridangam.jpg" alt="Mridangam">
+            <p><strong>Mridangam:</strong> A double-headed drum used in Carnatic music.</p>
+        </div>
+    </section>
+
+    <section id="wind" class="category">
+        <h2>Wind Instruments</h2>
+        <div class="instrument">
+            <img src="images/flute.jpg" alt="Flute">
+            <p><strong>Flute:</strong> A bamboo wind instrument played in Indian classical music.</p>
+        </div>
+        <div class="instrument">
+            <img src="images/shehnai.jpg" alt="Shehnai">
+            <p><strong>Shehnai:</strong> A double-reed instrument known for its auspicious sound.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Indian Classical Music Instruments</p>
+    </footer>
+
+</body>
+</html>
