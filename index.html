@@ -6,10 +6,10 @@
     <title>Indian Classical Music Instruments</title>
     <link rel="stylesheet" href="style.css">
     <script>
-    if (!sessionStorage.getItem("loggedIn")) {
-        window.location.href = "login.html";  // Redirect if not logged in
-    }
-</script>
+        if (!sessionStorage.getItem("loggedIn")) {
+            window.location.href = "login.html"; // Redirect if not logged in
+        }
+    </script>
 </head>
 <body>
 
@@ -24,45 +24,68 @@
         </nav>
     </header>
 
+    <!-- String Instruments Section -->
     <section id="string" class="category">
         <h2>String Instruments</h2>
+
         <div class="instrument">
             <img src="images/sitar.jpg" alt="Sitar">
             <p><strong>Sitar:</strong> A plucked string instrument used in Hindustani classical music.</p>
+            <a href="https://www.youtube.com/results?search_query=how+to+play+sitar" target="_blank">
+                <button>Learn Sitar</button>
+            </a>
         </div>
+
         <div class="instrument">
             <img src="images/veena.jpg" alt="Veena">
-            <p><strong>Veena:</strong> A traditional South Indian instrument with a resonating body.</p>
+            <p><strong>Veena:</strong> A traditional Indian string instrument used in Carnatic music.</p>
+            <a href="https://www.youtube.com/results?search_query=how+to+play+veena" target="_blank">
+                <button>Learn Veena</button>
+            </a>
         </div>
     </section>
 
+    <!-- Percussion Instruments Section -->
     <section id="percussion" class="category">
         <h2>Percussion Instruments</h2>
+
         <div class="instrument">
             <img src="images/tabla.jpg" alt="Tabla">
-            <p><strong>Tabla:</strong> A pair of hand drums used in North Indian music.</p>
+            <p><strong>Tabla:</strong> A popular Indian percussion instrument used in Hindustani music.</p>
+            <a href="https://www.youtube.com/results?search_query=how+to+play+tabla" target="_blank">
+                <button>Learn Tabla</button>
+            </a>
         </div>
+
         <div class="instrument">
             <img src="images/mridangam.jpg" alt="Mridangam">
-            <p><strong>Mridangam:</strong> A double-headed drum used in Carnatic music.</p>
+            <p><strong>Mridangam:</strong> A primary rhythmic instrument in Carnatic music.</p>
+            <a href="https://www.youtube.com/results?search_query=how+to+play+mridangam" target="_blank">
+                <button>Learn Mridangam</button>
+            </a>
         </div>
     </section>
 
+    <!-- Wind Instruments Section -->
     <section id="wind" class="category">
         <h2>Wind Instruments</h2>
+
         <div class="instrument">
-            <img src="images/flute.jpg" alt="Flute">
-            <p><strong>Flute:</strong> A bamboo wind instrument played in Indian classical music.</p>
+            <img src="images/bansuri.jpg" alt="Bansuri">
+            <p><strong>Bansuri:</strong> A bamboo flute associated with Indian classical music.</p>
+            <a href="https://www.youtube.com/results?search_query=how+to+play+bansuri" target="_blank">
+                <button>Learn Bansuri</button>
+            </a>
         </div>
+
         <div class="instrument">
             <img src="images/shehnai.jpg" alt="Shehnai">
-            <p><strong>Shehnai:</strong> A double-reed instrument known for its auspicious sound.</p>
+            <p><strong>Shehnai:</strong> A double-reed wind instrument commonly used in North Indian music.</p>
+            <a href="https://www.youtube.com/results?search_query=how+to+play+shehnai" target="_blank">
+                <button>Learn Shehnai</button>
+            </a>
         </div>
     </section>
-
-    <footer>
-        <p>© 2025 Indian Classical Music Instruments</p>
-    </footer>
 
 </body>
 </html>
