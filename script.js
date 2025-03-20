@@ -70,3 +70,19 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
         alert("Invalid credentials. Try again.");
     }
 });
+function login() {
+    let username = document.getElementById("loginUser").value;
+    let password = document.getElementById("loginPass").value;
+
+    let storedPassword = localStorage.getItem(username);  // Get password for entered username
+
+    if (storedPassword === null) {
+        alert("User does not exist! Please sign up first.");
+    } else if (storedPassword === password) {
+        sessionStorage.setItem("loggedIn", "true");  // Keep user logged in for current session
+        sessionStorage.setItem("currentUser", username); // Store logged-in user
+        window.location.href = "index.html";  // Redirect to main page
+    } else {
+        alert("Incorrect password! Try again.");
+    }
+}
